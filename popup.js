@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 現在の状態を取得
   chrome.storage.local.get("filterEnabled", (data) => {
-    const isEnabled = data.filterEnabled ?? false;
+    const isEnabled = data.filterEnabled ?? true;
     updateButton(isEnabled);
   });
 
